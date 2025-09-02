@@ -65,6 +65,6 @@ class FtpClient
             return @call_user_func_array($function, $arguments);
         }
 
-        throw new \Exception("{$function} is not a valid FTP function");
+        return false;
     }
 }
