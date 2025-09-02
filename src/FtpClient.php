@@ -43,6 +43,8 @@ class FtpClient
     {
         // support aliases for some functions
         $aliases = [
+            'download' => 'get',
+            'upload'   => 'put',
             'list'     => 'nlist',
             'modified' => 'mdtm',
         ];
