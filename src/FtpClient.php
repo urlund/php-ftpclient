@@ -22,12 +22,12 @@ class FtpClient
      */
     public function __construct($host, $username, $password)
     {
-        $this->conn = ftp_connect($host);
+        $this->conn = \ftp_connect($host);
         if (!$this->conn) {
             throw new \Exception("Could not connect to FTP server");
         }
 
-        if (!@ftp_login($this->conn, $username, $password)) {
+        if (!@\ftp_login($this->conn, $username, $password)) {
             throw new \Exception("Could not log in to FTP server");
         }
     }
