@@ -1,0 +1,16 @@
+{
+    "name": "urlund/php-ftpclient",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Urlund\\FtpClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Henrik Urlund",
+            "email": "henrik@urlund.com"
+        }
+    ],
+    "require": {}
+}
